@@ -30,6 +30,13 @@ public class VerticalLabel: UIView {
     }
 
     @IBInspectable
+    public var fontColor: UIColor = .black {
+        didSet {
+            self.label.textColor = fontColor
+        }
+    }
+
+    @IBInspectable
     public var boldFont: Bool = false {
         didSet {
             if boldFont {
